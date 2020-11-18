@@ -15,7 +15,7 @@ function closeMenu() {
   precise: true,
   timeRunning: true,
   debugging: true,
-  speedUp: 2000
+  speedUp: 400
 });
 	
 
