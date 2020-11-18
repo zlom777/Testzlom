@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="Main.css" />
+<style>
+.container {
+  border: 2px solid #ccc;
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px 0
+}
+
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.container span {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+@media (max-width: 500px) {
+  .container {
+      text-align: center;
+  }
+  .container img {
+      margin: auto;
+      float: none;
+      display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>Отзывы</h2>
+
+<div class="container">
+  <img src="Image/bandmember.jpg" alt="Avatar" style="width:90px">
+  <p><span>Алексей</span> Учитель.</p>
+  <p>Моей дочери очень понравился костюм барби</p>
+</div>
+
+<div class="container">
+  <img src="Image/avatar_g2.jpg" alt="Avatar" style="width:90px">
+  <p><span>Валентина</span> Домработница.</p>
+  <p>Покупаю платья на праздники и весело зажигаю</p>
+  <p>Советовала данный сайт всем своим подругам</p>
+</div>
+
+<div class="container">
+  <img src="Image/img_avatar2.png" alt="Avatar" style="width:90px">
+  <p><span>Алла</span> Dance.</p>
+  <p>Беру для вечеринок и для работы, так как работа связана с танцами. Качество очень понравилось</p>
+</div>
+
+<div class="container">
+  <img src="Image/brandon_Avatar.jpg" alt="Avatar" style="width:90px">
+  <p><span>Виктор</span> Helloween.</p>
+  <p>В хеллоуин здесь всегда можно найти отличный костюм :)</p>
+</div>
+
+
+
+<a href="Razm.html" class="previous">&laquo; Назад</a>
+<a href="Index.html" class="next">Вперёд &raquo;</a>
+
+
+</body>
+</html>
+
+
+

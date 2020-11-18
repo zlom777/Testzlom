@@ -1,0 +1,6 @@
+[1117/112249.694:ERROR:file_io.cc(135)] WriteFile: Идет закрытие канала. (0xE8)
+[1117/112607.422:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
+[1117/113134.701:ERROR:file_io.cc(135)] WriteFile: Идет закрытие канала. (0xE8)
+[1117/125509.401:ERROR:file_io.cc(135)] WriteFile: Идет закрытие канала. (0xE8)
+[1117/125854.404:ERROR:file_io.cc(135)] WriteFile: Идет закрытие канала. (0xE8)
+[1117/134805.681:ERROR:file_io.cc(135)] WriteFile: Идет закрытие канала. (0xE8)

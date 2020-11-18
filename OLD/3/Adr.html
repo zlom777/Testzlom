@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="CSS/Main.css"/>
+<title>Адреса</title>
+
+<!--Подключение внешних и вн. файлов javascript -->
+  <script src="JS/jquery.min-3.1.1.js"></script>
+  <script src="JS/stimed.min.js"></script>
+
+<style>
+<!--Стиль для таблицы-->
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+</style>
+</head>
+<body>
+
+<h2 style="color:DarkOrchid;">Дом карнавальных костюмов</h2>
+
+<!--Само Меню -->
+<div id="mySidemenu" class="sidemenu">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">×</a>
+  <a href="Index.html">Главная</a>
+  <a href="Razm.html">Размеры</a>
+  <a href="Otz.html">Отзывы</a>
+  <a href="Adr.html">Адреса</a>
+  <a href="Cont.html">Контакты</a>
+</div>
+
+<!--кнопка Меню -->
+<span style="font-size:30px;cursor:pointer;color:DarkOrchid" onclick="openMenu()">☰ Меню</span>
+
+<h2 style="color:Fuchsia;">ул. Меркулова, д. 63, ТЦ «Янтарь»</h2>
+
+<!--Адаптивная таблица
+Если у вас слишком широкая таблица, вы можете добавить элемент контейнера с overflow-x:auto 
+вокруг таблицы, и при необходимости он будет отображать горизонтальную полосу прокрутки-->
+
+
+<div id="add" style="overflow-x:auto;">
+  <table>
+    <tr>
+      <th style="color:DarkMagenta;">Режим работы</th>
+      <th style="color:DarkMagenta;">Телефон</th>
+      <th style="color:DarkMagenta;">Способы оплаты</th>
+    </tr>
+    <tr>
+      <td>пн.–вс.: 9:00–20:00</td>
+      <td>8 (800) 550-37-95</td>
+      <td>Наличные и Карты</td>
+  </table>
+</div>
+
+
+
+<!-- Карта Яндекса-->
+<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Acee60841b96e58a5d04f912537c8fad07e53e34250d012cbaae7c66cd84c68c6&amp;width=712&amp;height=550&amp;lang=ru_RU&amp;scroll=true"></script>
+
+<!--Подключение внешних и вн. файлов javascript -->
+  <script src="JS/javMain.js"></script>
+
+<!--Кнопки вперёд и назад-->
+<a href="Otz.html" class="previous">&laquo; Назад</a>
+<a href="Cont.html" class="next">Вперёд &raquo;</a>
+
+</body>
+</html>

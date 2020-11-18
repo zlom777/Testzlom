@@ -1,0 +1,114 @@
+<!DOCTYPE html> 
+<html>
+
+<head>
+  <title>Модная детская одежда и карнавальные костюмы</title>
+  <link rel="stylesheet" href="Main.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+      font-family: "Lato", sans-serif;
+}
+<!-- Боковое меню -->
+.sidemenu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;    
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidemenu a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidemenu a:hover {
+    color: #f1f1f1;
+}
+
+.sidemenu.closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidemenu {padding-top: 15px;}
+  .sidemenu {font-size: 18px;}
+}
+
+
+
+</style>
+</head>
+<body>
+
+  <h1 style="color:Fuchsia;">Модная деская одежда и карнавальные костюмы</h1>
+
+<!--Само Меню -->
+<div id="mySidemenu" class="sidemenu">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">×</a>
+  <a href="#">Для клиентов</a>
+  <a href="#">Обслуживание</a>
+  <a href="Otz.html">Отзывы</a>
+  <a href="#">Контакты</a>
+</div>
+
+
+<!--кнопка Меню -->
+<span style="font-size:30px;cursor:pointer;color:DarkOrchid" onclick="openMenu()">☰ Меню</span>
+
+
+<!--Скрипты для открытия и закрытия меню -->
+<script>
+function openMenu() {
+    document.getElementById("mySidemenu").style.width = "250px";
+}
+
+function closeMenu() {
+    document.getElementById("mySidemenu").style.width = "0";
+}
+</script>
+
+
+  <h3 style="color:DarkOrchid;"> Верхняя одежда</h3>
+    <ul>
+      <li style="color:MediumPurple;">Куртки</li>
+      <li style="color:MediumPurple;">Пуховики</li>
+      <li style="color:MediumPurple;">Жилеты</li>
+    </ul>
+   <h3 style="color:DarkOrchid;"> Карнавальные костюмы</h3>
+    <ul>
+      <li style="color:MediumPurple;">Новогодние</li>
+      <li style="color:MediumPurple;">Тематические</li>
+      <li style="color:MediumPurple;">Маски</li>
+    </ul>
+    <form action="Razm.html" method="post">
+      <input type="submit" value="Размерная сетка">
+    </form>
+   <a href="https://lipeck.dochkisinochki.ru/icatalog/categories/karnaval/">Маски</a>
+   <img src="Image/616708998_w640_h640_karnavalnyj-kostyum-dlya.jpg" alt="Nature" class="responsive" height="500" width="342">
+  <p>
+    <video width="320" height="240" controls>
+  <source src="Image/ДЕТСКИЕ КАРНАВАЛЬНЫЕ КОСТЮМЫ.mp4" type="video/mp4">
+    </video>
+  </p>
+
+<a href="Index.html" class="previous">&laquo; Назад</a>
+<a href="Razm.html" class="next">Вперёд &raquo;</a>
+
+</body>
+
+</html>

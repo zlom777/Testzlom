@@ -1,0 +1,109 @@
+<!DOCTYPE html> 
+<html>
+
+<head>
+  <title>Модная детская одежда и карнавальные костюмы</title>
+  <link rel="stylesheet" href="Main.css" />
+  <link rel="stylesheet" type="text/css" href="JQ.css">
+  <!--<link rel="stylesheet" type="text/css" href="imgareaselect-default.css"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+      font-family: "Lato", sans-serif;
+}
+
+</style>
+</head>
+<body>
+
+  <h1 style="color:DarkOrchid;">Модная детская одежда и карнавальные костюмы</h1>
+
+<!--Само Меню -->
+<div id="mySidemenu" class="sidemenu">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">×</a>
+  <a href="Index.html">Главная</a>
+  <a href="Razm.html">Размеры</a>
+  <a href="Otz.html">Отзывы</a>
+  <a href="Adr.html">Адреса</a>
+  <a href="Cont.html">Контакты</a>
+</div>
+
+
+<!--кнопка Меню -->
+<span style="font-size:30px;cursor:pointer;color:DarkOrchid" onclick="openMenu()">☰ Меню</span>
+
+<body>
+
+<div id="page">
+
+    <div class="block rounded">
+        <h1>Редактирование ваших фотографий</h1>
+    </div>
+    
+    <div class="block_main rounded">
+        <h2>Обрезать</h2>
+        <p>Выделите область, необходимую для обрезки изображения</p>
+<p>
+    <img id="photo" src="Image\img1.jpg" alt="" title="" style="margin: 0 0 0 10px;" />
+	<img id="photo2" src="Image\img2.jpg" alt="" title="" style="margin: 0 0 0 10px;" />
+</p>
+
+<form action="crop.php" method="post">
+    <input type="hidden" name="x1" value="" />
+    <input type="hidden" name="y1" value="" />
+    <input type="hidden" name="x2" value="" />
+    <input type="hidden" name="y2" value="" />
+    <input type="hidden" name="w" value="" />
+    <input type="hidden" name="h" value="" />
+    <input type="submit" value="Crop" />
+</form>
+
+
+
+<script type="text/javascript"> 
+function preview(img, selection) {
+    var scaleX = 100 / (selection.width || 1);
+    var scaleY = 100 / (selection.height || 1);
+    $('#photo + div > img').css({
+        width: Math.round(scaleX * 600) + 'px',
+        height: Math.round(scaleY * 400) + 'px',
+        marginLeft: '-' + Math.round(scaleX * selection.x1) + 'px',
+        marginTop: '-' + Math.round(scaleY * selection.y1) + 'px'
+    });
+} 
+
+$(document).ready(function () {
+    $('<div><img src="photo.jpg" style="position: relative;" /><div>') .css({
+        float: 'left',
+        position: 'relative',
+        overflow: 'hidden',
+        width: '100px',
+        height: '100px'
+    }) .insertAfter($('#photo')); 
+
+    $('#photo').imgAreaSelect({
+        aspectRatio: '1:1',
+        handles: true,
+        onSelectChange: preview,
+        onSelectEnd: function ( image, selection ) {
+            $('input[name=x1]').val(selection.x1);
+            $('input[name=y1]').val(selection.y1);
+            $('input[name=x2]').val(selection.x2);
+            $('input[name=y2]').val(selection.y2);
+            $('input[name=w]').val(selection.width);
+            $('input[name=h]').val(selection.height);
+        }
+    });
+}); 
+</script>
+
+<!--Подключение внешнего файла javascript -->
+<script src="javMain.js"></script>
+<!--<script src="jquery-3.5.1.js"></script>-->
+<script src="JQ.js"></script>
+
+<script type="text/javascript" src="jquery.imgareaselect.pack.js"></script>
+<script type="text/javascript" src="jquery-1.5.1.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-size:13px;
+    color:#fff;
+    font-family:Arial, Helvetica, sans-serif;
+    background: #374353;
+    font-family:Corbel,'Myriad Pro',Arial, Helvetica, sans-serif;
+}
+
+a { color: #fff; text-decoration: none;}
+a:hover { text-decoration: underline; }
+
+#page{
+    width:800px;
+    margin:20px auto;
+}
+
+.block{
+    background-color: #7b8b98;
+    margin-bottom:25px;
+    padding:30px;
+}
+
+.block_main {
+    background-color: #7b8b98;
+    text-shadow: 1px 1px 0 black;
+    padding: 30px; 
+}
+
+.block_main p {
+    margin: 20px 0 20px 0;
+}
+
+h1{
+    font-size:35px;
+    font-weight:normal;
+    position:relative;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: normal;
+}
+
+.rounded{
+    -moz-border-radius:12px;
+    -webkit-border-radius:12px;
+    border-radius:12px;
+}
+
+.block_footer {
+    float: right;
+    position: relative;
+    padding: 10px; 
+    margin-top: 20px;
+}
+
+ul { list-style-type: none; }
+ul li { padding: 10px 0 10px 0; border-bottom: 1px solid #fff; font-size: 15px; }
+.name { font-weight: bold; width: 100px; display: inline-block;}
+.date { color: #ccc; font-family: Arial; font-size: 9px; margin-right: 10px; }
+.message { font-style: italic; margin-left: 10px; }
+input { margin: 10px 5px 10px 5px; }
+.message { width: 300px; }
+form { margin: 20px 0 0 0;  }
+#message { display:none; margin: 30px 0;}
+
+
+/*
+ * imgAreaSelect default style
+ */
+
+.imgareaselect-border1 {
+	background: url(border-v.gif) repeat-y left top;
+}
+
+.imgareaselect-border2 {
+    background: url(border-h.gif) repeat-x left top;
+}
+
+.imgareaselect-border3 {
+    background: url(border-v.gif) repeat-y right top;
+}
+
+.imgareaselect-border4 {
+    background: url(border-h.gif) repeat-x left bottom;
+}
+
+.imgareaselect-border1, .imgareaselect-border2,
+.imgareaselect-border3, .imgareaselect-border4 {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+.imgareaselect-handle {
+    background-color: #fff;
+    border: solid 1px #000;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+.imgareaselect-outer {
+    background-color: #000;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+.imgareaselect-selection {  
+}

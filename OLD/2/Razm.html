@@ -1,0 +1,115 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<title>Размерная сетка</title>
+	<link rel="stylesheet" href="Main.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+
+<style>
+
+</style>
+
+ <h2 style="color:DarkOrchid;">Размеры</h2>
+
+<!--Само Меню -->
+<div id="mySidemenu" class="sidemenu">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">×</a>
+  <a href="Index.html">Главная</a>
+  <a href="Razm.html">Размеры</a>
+  <a href="Otz.html">Отзывы</a>
+  <a href="Adr.html">Адреса</a>
+  <a href="Cont.html">Контакты</a>
+</div>
+
+
+<!--кнопка Меню -->
+<span style="font-size:30px;cursor:pointer;color:DarkOrchid" onclick="openMenu()">☰ Меню</span>
+<br>
+
+<!--кнопка переключения размеров -->
+<input class="tgl tgl-flip" id="cb5" type="checkbox">
+<label class="tgl-btn" data-tg-off="Дети" data-tg-on="Взрослые" for="cb5"></label>
+
+
+
+<h3 id="setkaH3" style="color:DarkOrchid;">Размерная сетка детской одежды</h3>
+
+<img hidden id="set2"; src="Image/setka.jpg"; alt="Nature"; style ="invis"; width="600"; height="300";>
+
+<table id="Setka_tab" class="clTable"; style display='table-row'; color:DarkOrchid>
+
+	<tr>
+		<th>Размер</th>
+		<th>Рост(см)</th>
+		<th>Возраст(лет)</th>
+	</tr>
+		<td class="clTD">26</td>
+		<td class="clTD">92-98</td>
+		<td class="clTD">2-3</td>
+	<tr>
+	<tr>
+		<td class="clTD">28</td>
+		<td class="clTD">98-104</td>
+		<td class="clTD">3-4</td>
+	<tr>
+	<tr>
+		<td class="clTD">28-30</td>
+		<td class="clTD">104-110</td>
+		<td class="clTD">4</td>
+	<tr>
+	<tr>
+		<td class="clTD">30-32</td>
+		<td class="clTD">110-116</td>
+		<td class="clTD">4-5</td>
+	<tr>
+	<tr>
+		<td class="clTD">32</td>
+		<td class="clTD">116-122</td>
+		<td class="clTD">5-6</td>
+	<tr>
+	<tr>
+		<td class="clTD">34</td>
+		<td class="clTD">122-128</td>
+		<td class="clTD">6-7</td>
+	<tr>
+	<tr>
+		<td class="clTD">34-36</td>
+		<td class="clTD">128-134</td>
+		<td class="clTD">7-8</td>
+	<tr>
+	<tr>
+		<td class="clTD">36</td>
+		<td class="clTD">134-146</td>
+		<td class="clTD">9-10</td>
+	<tr>
+	<tr>
+		<td class="clTD">38</td>
+		<td class="clTD">146-156</td>
+		<td class="clTD">10-11</td>
+	<tr>
+ </table>
+
+<h2 id="setkaH2"; style="color:DarkOrchid";>В нашей одежде тепло всегда</h2>
+
+<p>
+<img id="kart"; src="Image/kost_det.jpeg"; alt="Nature"; class="responsive2" width="270"; height="272">
+<!--;-->
+</p> 
+
+<!--Подключение внешнего файла javascript -->
+<script src="javMain.js"></script>
+<script src="javRazm.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<!--Кнопки вперёд и назад-->
+<a href="Index.html" class="previous">&laquo; Назад</a>
+<a href="Otz.html" class="next">Вперёд &raquo;</a>
+ 
+</body>
+
+</html>
