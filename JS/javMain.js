@@ -19,7 +19,6 @@ function closeMenu() {
 });
 	
 
-
 // Создание текстовых и фоновых цветовых стилей по времени одновременно
 stimed.style.create({
   target: 'body',
@@ -213,6 +212,7 @@ stimed.style.create({
 stimed.style.update();
 stimed.style.logStyles();
 
+/*
 stimed.style.preset({
   preset: 'random values',
   target: '.txtTime',
@@ -221,6 +221,7 @@ stimed.style.preset({
   min: 0,
   max: 10
 });
+*/
 
 /*
 {
